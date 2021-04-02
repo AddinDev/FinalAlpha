@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0430C17E2616F026009EDC30 /* Category in Frameworks */ = {isa = PBXBuildFile; productRef = 0430C17D2616F026009EDC30 /* Category */; };
 		04DA8EAD2614174A0001770F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8EAC2614174A0001770F /* HomeView.swift */; };
 		04DA8EB1261418FB0001770F /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8EB0261418FB0001770F /* CustomEmptyView.swift */; };
 		04DA8EB4261419740001770F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8EB3261419740001770F /* CategoryRow.swift */; };
@@ -14,7 +15,6 @@
 		04DA8EBB26141B320001770F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8EBA26141B320001770F /* HomeRouter.swift */; };
 		04DA8EBE26141BF70001770F /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8EBD26141BF70001770F /* Injection.swift */; };
 		04DA8EC226141D150001770F /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8EC126141D150001770F /* APICall.swift */; };
-		04DA8EC8261425480001770F /* Category in Frameworks */ = {isa = PBXBuildFile; productRef = 04DA8EC7261425480001770F /* Category */; };
 		04FF70342612F58700D4019E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF70332612F58700D4019E /* AppDelegate.swift */; };
 		04FF70362612F58700D4019E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF70352612F58700D4019E /* SceneDelegate.swift */; };
 		04FF70382612F58700D4019E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF70372612F58700D4019E /* ContentView.swift */; };
@@ -30,7 +30,6 @@
 		04DA8EBA26141B320001770F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		04DA8EBD26141BF70001770F /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		04DA8EC126141D150001770F /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
-		04DA8EC5261424F00001770F /* Category */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Category; path = ../Category; sourceTree = "<group>"; };
 		04FF70302612F58700D4019E /* Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FF70332612F58700D4019E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FF70352612F58700D4019E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0430C17E2616F026009EDC30 /* Category in Frameworks */,
 				04DA8EB8261419EA0001770F /* SDWebImageSwiftUI in Frameworks */,
-				04DA8EC8261425480001770F /* Category in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +175,6 @@
 		04FF70272612F58700D4019E = {
 			isa = PBXGroup;
 			children = (
-				04DA8EC5261424F00001770F /* Category */,
 				04FF70322612F58700D4019E /* Alpha */,
 				04FF70312612F58700D4019E /* Products */,
 				04FC9D092612F78F00E4B1ED /* Frameworks */,
@@ -229,7 +227,7 @@
 			name = Alpha;
 			packageProductDependencies = (
 				04DA8EB7261419EA0001770F /* SDWebImageSwiftUI */,
-				04DA8EC7261425480001770F /* Category */,
+				0430C17D2616F026009EDC30 /* Category */,
 			);
 			productName = Alpha;
 			productReference = 04FF70302612F58700D4019E /* Alpha.app */;
@@ -260,6 +258,7 @@
 			mainGroup = 04FF70272612F58700D4019E;
 			packageReferences = (
 				04DA8EB6261419EA0001770F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				0430C17C2616F026009EDC30 /* XCRemoteSwiftPackageReference "AlphaCategory" */,
 			);
 			productRefGroup = 04FF70312612F58700D4019E /* Products */;
 			projectDirPath = "";
@@ -365,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -496,6 +495,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0430C17C2616F026009EDC30 /* XCRemoteSwiftPackageReference "AlphaCategory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AddinDev/AlphaCategory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		04DA8EB6261419EA0001770F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -507,14 +514,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0430C17D2616F026009EDC30 /* Category */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0430C17C2616F026009EDC30 /* XCRemoteSwiftPackageReference "AlphaCategory" */;
+			productName = Category;
+		};
 		04DA8EB7261419EA0001770F /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 04DA8EB6261419EA0001770F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
-		};
-		04DA8EC7261425480001770F /* Category */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Category;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Category",
+        "repositoryURL": "https://github.com/AddinDev/AlphaCategory.git",
+        "state": {
+          "branch": null,
+          "revision": "72e75b644c47f12ba4d269cc6f1a4d83d48fed6d",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "Common",
         "repositoryURL": "https://github.com/AddinDev/Common.git",
         "state": {
